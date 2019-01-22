@@ -1,1 +1,17 @@
-Hello
+<html>
+  <head>
+  </head>
+  <body>
+    <input type="text" id="inputtext" /><input type="button" onclick="UrlIze()">
+    <br />
+    <span id="output">&nbsp;</span>
+  </body>
+  <script>
+    function UrlIze()
+    {
+      let txt = document.getElementById("inputtext").value;
+      let objOutput = document.getElementById("output");
+      objOutput.innerHTML="Test";
+    }
+  </script>
+</html>
