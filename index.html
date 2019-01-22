@@ -2,16 +2,16 @@
   <head>
   </head>
   <body>
-    <input type="text" id="inputtext" /><input type="button" onclick="UrlIze()" value="Submit" />
+    Input: <input type="text" id="inputtext" /><input type="button" onclick="UrlIze()" value="Submit" />
     <br />
-    <span id="output">&nbsp;</span>
+    Ouput: <input type = "text" id="outputtext" style="width:150px;" />
   </body>
   <script>
     function UrlIze()
     {
       let txt = document.getElementById("inputtext").value;
-      let objOutput = document.getElementById("output");
-      objOutput.innerHTML="["+txt+"](#"+txt.replace(/ /g, "%20")+")";
+      let objOutput = document.getElementById("outputtext");
+      objOutput.value="["+txt+"](#"+txt.replace(/ /g, "%20")+")";
     }
   </script>
 </html>
